@@ -4,68 +4,161 @@
 */
 
 /* Colocar * seleciona tudo  */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
+
 
 .cabecalho {
     display: flex;
-    width: 100%;
+    box-shadow: #000000 0px 0px 18px;
+    height: 100px;
     position: relative;
     top: 0;
 }
 
 .lista {
-    display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    position: absolute;
+    top: 0;
+    /* Alinha ao topo da página */
+    left: 50%;
+    /* Alinha ao centro da página */
+    transform: translateX(-50%);
+    /* Ajusta para centralizar */
+    display: inline-block;
 }
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: top;
@@ -89,14 +182,43 @@ li {
     display: inline;
 }
 
+.lista-footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    align-items: center;
+
+}
+
 #logo {
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-right: 5px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
-.centro {
-	position: absolute;
+#menu {
+    display: inline-block;
+    margin: 20px;
+    padding: 25px;
+}
+
+#imagem-cabeçalho {
+    width: 50px;
+    height: 50px;
+}
+
+#imagem-main {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: auto; /* Altura total da viewport */
+    position: relative;
+    left: 25%;
+}
+
+.lista-footer hover {
+    background-color: #1943ff;
 }
