@@ -135,12 +135,14 @@ table {
     border-spacing: 0;
 }
 
-
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 .cabecalho {
     display: flex;
-    box-shadow: #000000 0px 0px 18px;
-    height: 100px;
+    box-shadow: #011585 0px 0px 20px;
+    height: 120px;
     position: relative;
     top: 0;
 }
@@ -167,12 +169,13 @@ main {
 }
 
 a {
-    color: white
+    color: #000000;
+    text-decoration: none;
 }
 
 footer {
-    background: #1943ff;
-    color: white;
+    background: #011585;
+    color: rgb(255, 255, 255);
     bottom: 0%;
     position: fixed;
     width: 100%;
@@ -185,7 +188,7 @@ li {
 .lista-footer {
     list-style-type: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     display: flex;
     align-items: center;
 
@@ -201,8 +204,15 @@ li {
 
 #menu {
     display: inline-block;
-    margin: 20px;
-    padding: 25px;
+    margin: 25px;
+    padding: 30px;
+}
+
+#menu1 {
+    display: inline-block;
+    margin: 25px;
+    padding: 30px;
+    border-top: 2px solid #011585;
 }
 
 #imagem-cabeçalho {
@@ -213,15 +223,34 @@ li {
 #imagem-main {
     display: flex;
     align-items: center;
-    width: 50%;
-    height: auto; /* Altura total da viewport */
+    width: 60%;
+    height: auto;
     position: relative;
-    left: 25%;
+    left: 20%;
+    margin-top: 50px;
 }
 
 .lista-footer li:hover img {
-    width: 40px; 
-    height: 40px; 
-    opacity: 0.8; 
-    padding: 5px; 
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.lista li:hover {
+    background: #ffffff;
+    transition: all 0.1s;
+    border-top: 2px solid #011585;
+    padding-top: 1px;
+}
+
+.home {
+    background-color: rgb(0, 0, 0);
+}
+
+p strong:hover {
+    transition: font-size 0.1s ease;
+    padding: 1px;
+    font-size: 17px;
 }
