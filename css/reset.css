@@ -1,138 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-/* Colocar * seleciona tudo  */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
 }
 
 body {
@@ -147,65 +19,17 @@ body {
     top: 0;
 }
 
-.lista {
+#cabecalho__image {
+    width: 50px;
+    height: 50px;
+}
+
+.list {
     position: absolute;
     top: 0;
-    /* Alinha ao topo da página */
     left: 50%;
-    /* Alinha ao centro da página */
     transform: translateX(-50%);
-    /* Ajusta para centralizar */
     display: inline-block;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: top;
-    width: 100%;
-    top: 0;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-footer {
-    background: #011585;
-    color: rgb(255, 255, 255);
-    bottom: 0%;
-    position: fixed;
-    width: 100%;
-}
-
-li {
-    display: inline;
-}
-
-.lista-footer {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-
-}
-
-#logo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-#menu {
-    display: inline-block;
-    margin: 25px;
-    padding: 30px;
 }
 
 #menu1 {
@@ -215,12 +39,28 @@ li {
     border-top: 2px solid #011585;
 }
 
-#imagem-cabeçalho {
-    width: 50px;
-    height: 50px;
+#menu {
+    display: inline-block;
+    margin: 25px;
+    padding: 30px;
 }
 
-#imagem-main {
+li {
+    display: inline;
+}
+
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: top;
+    width: 100%;
+    top: 0;
+}
+
+#conteudo__image {
     display: flex;
     align-items: center;
     width: 60%;
@@ -230,7 +70,39 @@ li {
     margin-top: 50px;
 }
 
-.lista-footer li:hover img {
+
+
+footer {
+    background: #011585;
+    color: rgb(255, 255, 255);
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+}
+
+.footer__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#footer__list__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer__list li:hover img {
     width: 40px;
     height: 40px;
     opacity: 0.8;
@@ -238,15 +110,11 @@ li {
     transition: all 0.3s;
 }
 
-.lista li:hover {
+.list li:hover {
     background: #ffffff;
     transition: all 0.1s;
     border-top: 2px solid #011585;
     padding-top: 1px;
-}
-
-.home {
-    background-color: rgb(0, 0, 0);
 }
 
 p strong:hover {
