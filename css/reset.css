@@ -16,19 +16,33 @@ body {
     box-shadow: #011585 0px 0px 20px;
     height: 120px;
     position: relative;
-    top: 0;
+    top: 0;    
+    flex-wrap: wrap;
 }
 
 #cabecalho__image {
-    width: 50%;
+    
 }
 
-.cabecalho__ul{
-    position: absolute;
+#separar {
+    width: 50%;
+    max-width: 35%;
+}
+
+.cabecalho__ul {
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
+    left: 0%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+
+.cabecalho__ul li:hover {
+    background: #ffffff;
+    transition: all 0.1s;
+    border-top: 2px solid #011585;
+    padding-top: 1px;
 }
 
 #menu1 {
@@ -58,14 +72,19 @@ li {
     top: 0;
 }
 
+#conteudo__separar {
+    float: left;
+    max-width: 70%;
+    max-height: 10%;
+}
+
 #conteudo__image {
     display: flex;
     align-items: center;
     width: 60%;
-    height: auto;
     position: relative;
     left: 20%;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 footer {
@@ -74,14 +93,17 @@ footer {
     bottom: 0%;
     position: fixed;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .rodape__nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
     align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
 }
 
 a {
@@ -90,11 +112,7 @@ a {
 }
 
 #rodape__nav__image {
-    position: absolute;
-	bottom: 10%;
-	right: 0;
-	margin-right: 10px;
-	vertical-align: middle;
+    align-self: center;
 }
 
 .rodape__nav li:hover img {
@@ -105,14 +123,7 @@ a {
     transition: all 0.3s;
 }
 
-.cabecalho__ul li:hover {
-    background: #ffffff;
-    transition: all 0.1s;
-    border-top: 2px solid #011585;
-    padding-top: 1px;
-}
-
-p strong:hover {
+#conteudo__text strong:hover {
     transition: font-size 0.1s ease;
     padding: 1px;
     font-size: 17px;
