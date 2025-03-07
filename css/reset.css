@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
 }
 
 .cabecalho {
@@ -20,13 +21,14 @@ body {
     flex-wrap: wrap;
 }
 
-#cabecalho__image {
-    
+.menu__img {
+    width: 50%;
+    max-width: 30%;
 }
 
-#separar {
+.separar {
     width: 50%;
-    max-width: 35%;
+    max-width: 30%;
 }
 
 .cabecalho__ul {
@@ -36,6 +38,7 @@ body {
     justify-content: center;
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .cabecalho__ul li:hover {
@@ -57,7 +60,7 @@ body {
     margin: 25px;
     padding: 30px;
 }
-
+/* 
 li {
     display: inline;
 }
@@ -127,4 +130,4 @@ a {
     transition: font-size 0.1s ease;
     padding: 1px;
     font-size: 17px;
-}
+} */ 
